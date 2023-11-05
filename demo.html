@@ -55,9 +55,9 @@
     <div id="container">
       <div id="blocklyArea"></div>
       <div id="menubar">
-        <div><span id="saveText">💾 Save blocks:</span> <input type="button" value="Save" id="saveButton" /></div>
-        <div><span id="loadText">📂 Load blocks:</span> <input type="file" id="fileButton" style="max-width:200px" /></div>
-        <div><span id="exportText">📄 Export webpage as HTML:</span> <input type="button" value="Export" id="exportButton" /></div>
+        <div><span id="saveText">💾 Save</span> <input type="button" value="Save" id="saveButton" /></div>
+        <div><span id="loadText">📂 Load</span> <input type="file" id="fileButton" style="max-width:200px" /></div>
+        <div><span id="exportText">📄 Export</span> <input type="button" value="Export" id="exportButton" /></div>
         <script>
           if (typeof(Msg) == "object" && Msg.buttons) {
             document.getElementById("saveText").textContent   = Msg.buttons.save.desc;
@@ -70,7 +70,7 @@
       </div>
       <div id="title">untitled web page</div>
       <div id="websiteFrame"><iframe id="website"></iframe></div>
-      <pre id="sourcecode">sum contnent</pre>
+      <pre id="sourcecode" style=".prevent-select {-webkit-user-select: none; /* Safari */-ms-user-select: none; /* IE 10 and IE 11 */user-select: none; /* Standard syntax */}"></pre>
     </div>
 
     <xml xmlns="https://developers.google.com/blockly/xml" id="toolbox" style="display: none">
